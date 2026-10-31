@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#101827"><meta name="description" content="Operação: Fuga do Brasil — uma aventura de plataforma e sátira política fictícia.">
+<title>OPERAÇÃO: FUGA DO BRASIL</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="shell">
+  <header class="brand"><span class="brand-mark">OF</span><div><strong>OPERAÇÃO: FUGA DO BRASIL</strong><small>PLATAFORMA 2D • SÁTIRA FICTÍCIA</small></div><button id="sound-btn" class="icon-btn" title="Som ligado/desligado">♫</button></header>
+  <section id="menu" class="panel menu-screen">
+    <div class="skyline" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="menu-content">
+      <div class="stamp">EDIÇÃO EXTRAORDINÁRIA</div>
+      <h1>OPERAÇÃO:<br><em>FUGA DO BRASIL</em></h1>
+      <p class="lead">Cinco fases. Cinco chefões. Uma quantidade inacreditável de burocracia.</p>
+      <div class="menu-actions"><button id="play-btn" class="btn primary">INICIAR A FUGA <span>▶</span></button><button id="how-btn" class="btn ghost">COMO JOGAR</button></div>
+      <p id="best-score" class="best-score">RECORDE: 0 DOCUMENTOS</p>
+      <p class="disclaimer">Personagens e acontecimentos apresentados como sátira ficcional.</p>
+    </div>
+  </section>
+  <section id="game" class="panel game-screen hidden">
+    <div class="hud">
+      <div class="hud-stage"><small>LOCALIZAÇÃO</small><strong id="stage-label">BRASÍLIA</strong></div>
+      <div class="hud-stat"><small>DOCUMENTOS</small><strong id="score">000</strong></div>
+      <div class="hud-stat"><small>VIDAS</small><strong id="lives">♥ ♥ ♥</strong></div>
+      <div class="hud-stat wanted"><small>EXPOSIÇÃO</small><strong id="heat">★☆☆</strong></div>
+      <button id="pause-btn" class="pause" aria-label="Pausar">Ⅱ</button>
+    </div>
+    <div class="canvas-frame"><canvas id="screen" width="960" height="540"></canvas>
+      <div id="toast" class="toast hidden"></div>
+      <div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-kicker">OPERAÇÃO: FUGA DO BRASIL</div><h2 id="modal-title">PAUSADO</h2><p id="modal-copy">A burocracia não tira folga.</p><div id="modal-buttons"></div></div></div>
+    </div>
+    <div class="touchbar">
+      <div class="touch-group"><button data-key="left">◀</button><button data-key="right">▶</button></div>
+      <div class="touch-group"><button data-key="attack" class="attack">📰</button><button data-key="jump" class="jump">PULAR</button></div>
+    </div>
+    <footer class="controls-hint">MOVER: A/D ou ←/→ <b>•</b> PULAR: ESPAÇO / W / ↑ <b>•</b> ARREMESSAR PAPELADA: X <b>•</b> PAUSAR: P / ESC</footer>
+  </section>
+  <section id="how" class="panel help-screen hidden"><button class="back-btn" id="back-btn">← VOLTAR</button><h2>MANUAL DA FUGA</h2><div class="help-grid"><article><b>◀ ▶</b><h3>Movimentação</h3><p>Use as setas ou A/D para atravessar os cenários.</p></article><article><b>⬆</b><h3>Salto</h3><p>Pule plataformas, obstáculos e inimigos. Pular sobre inimigos também funciona.</p></article><article><b>📰</b><h3>Papelada voadora</h3><p>Pressione X para lançar uma pilha de documentos e atingir inimigos e chefões.</p></article><article><b>♥</b><h3>Sobrevivência</h3><p>Você tem três vidas. Encontre documentos bônus e evite perder todas.</p></article></div><p class="help-tip">Dica: chefões têm padrões de ataque. Observe, desvie e contra-ataque!</p></section>
+  <footer class="site-foot">UM JOGO INDEPENDENTE DE HUMOR POLÍTICO • FEITO PARA JOGAR NO NAVEGADOR</footer>
+</main>
+<script src="js/data.js"></script><script src="js/input.js"></script><script src="js/audio.js"></script><script src="js/engine.js"></script><script src="js/main.js"></script>
+</body></html>
